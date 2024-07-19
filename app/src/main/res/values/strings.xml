@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InventoryPayrollManager</string>
+    <string name="view_employees">View Employees</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="position">Position</string>
+    <string name="join_date">Join Date</string>
+    <string name="base_salary">Base Salary</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_position">Position</string>
+</resources>

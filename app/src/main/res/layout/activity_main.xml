@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campos para ingresar información del empleado -->
+    <EditText
+        android:id="@+id/editTextNombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"/>
+
+    <EditText
+        android:id="@+id/editTextFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Nacimiento"/>
+
+    <EditText
+        android:id="@+id/editTextPuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Puesto"/>
+
+    <EditText
+        android:id="@+id/editTextFechaIngreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Ingreso"/>
+
+    <EditText
+        android:id="@+id/editTextSueldoBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sueldo Base"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextRetenciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retenciones"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextImpuestos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Impuestos"
+        android:inputType="numberDecimal"/>
+
+    <!-- Botón para agregar empleado -->
+    <Button
+        android:id="@+id/btnAgregarEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Empleado"
+        android:onClick="agregarEmpleado"/>
+
+    <!-- Lista de empleados -->
+    <ListView
+        android:id="@+id/listViewEmpleados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <!-- Detalle del empleado seleccionado -->
+    <TextView
+        android:id="@+id/textViewDetalleEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Selecciona un empleado"/>
+
+</LinearLayout>
